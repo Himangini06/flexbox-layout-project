@@ -1,7 +1,3 @@
-/* Add this to the top of your CSS to find the culprit */
-* {
-    outline: 2px solid red !important;
-}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,10 +6,6 @@
     list-style-type: none;
     color: white;
     font-family: rubik;
-}
-
-body {
-    /* overflow-x: hidden; */
 }
 
 .container {
