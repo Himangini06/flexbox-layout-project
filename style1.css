@@ -183,6 +183,7 @@ a {
     color: white;
     font-size: 24px;
 }
+
 /* header ends  */
 
 /* mainslider starts */
@@ -331,6 +332,7 @@ a {
         transform: translateY(0);
     }
 }
+
 /* mainslider animation ends */
 
 /* mainslider ends */
@@ -374,7 +376,9 @@ a {
     margin-right: 5px;
     line-height: 85px;
     font-size: 20px;
+    
 }
+
 /* Service ends   */
 
 /* ourstory starts  */
@@ -438,7 +442,7 @@ footer .filter {
     font-family: Nunito;
     font-weight: 800;
     text-align: center;
-    padding: 0 480px 20px 480px;
+    /* padding: 0 480px 20px 480px; */
 
 }
 
@@ -552,6 +556,7 @@ footer .filter {
     bottom: 0;
     opacity: 1;
 }
+
 /* ourstory ends  */
 
 /* ourshop products starts  */
@@ -707,6 +712,7 @@ footer .filter {
 .writeup1 {
     margin-top: -30px;
 }
+
 /* ourshop products ends  */
 
 /* Quality-services section starts */
@@ -942,6 +948,7 @@ footer .filter {
 .imagecard:hover .topdiv {
     opacity: 1;
 }
+
 /* Gallery section ends */
 
 /* Promotion starts */
@@ -1105,6 +1112,7 @@ footer .filter {
         left: 125%;
     }
 }
+
 /* Promotion ends */
 
 /* testimonial section starts */
@@ -1215,6 +1223,7 @@ footer .filter {
         opacity: 1;
     }
 }
+
 /* testimonial section ends */
 
 
@@ -1398,6 +1407,7 @@ footer .filter {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
 }
 
 .form-row input,
@@ -1426,6 +1436,7 @@ textarea {
     font-size: 18px;
     color: white;
 }
+
 /* Bagerynews ends */
 
 /* footer starts */
@@ -1608,14 +1619,17 @@ textarea {
 .bottom-footer .footer-nav li:first-child {
     border-right: 2px solid grey;
 }
+
 /* footer ends */
 
 
 /* Media query  */
 @media (max-width:1200px) {
+
     /* header section  */
     .row {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .header {
@@ -1631,8 +1645,8 @@ textarea {
 
     .header .logo {
         width: 100%;
-        padding-left: 120px;
-
+        padding-left: 10px;
+        text-align: center;
     }
 
     .main-menu {
@@ -1648,6 +1662,7 @@ textarea {
         font-size: 24px;
         color: white;
     }
+
     /* slider section  */
     .slider {
         background-size: 220% 100%;
@@ -1677,6 +1692,7 @@ textarea {
     .slider-image {
         display: none;
     }
+
     /* services section  */
     .services {
         padding: 20px;
@@ -1688,7 +1704,17 @@ textarea {
         width: 100%;
         padding: 20px 25px;
     }
+
+    .roundicon {
+    width: 100px;
+   }
+
     /* our story section  */
+    .story .col {
+        width: 100%;
+        /* background: pink; */
+    }
+
     .heading {
         width: 500px;
     }
@@ -1698,11 +1724,15 @@ textarea {
         font-size: 30px;
 
     }
-    .about,
-    .glassimage,
-    .bagery {
-        width: 420px;
-        margin: 30px auto;
+    .glassimage
+    {
+        text-align: center;
+    }
+
+    .overview .col {
+        width: 100%;
+        margin: 0px;
+        padding: 40px 10px;
     }
 
     .contact button {
@@ -1713,7 +1743,8 @@ textarea {
     .left {
         display: none;
     }
-     /* ourshop section  */
+
+    /* ourshop section  */
     .ourshop {
         padding: 0;
         margin: 0;
@@ -1734,6 +1765,7 @@ textarea {
         width: 275px;
         margin: 8px auto;
     }
+
     /* Quality-services section */
     .serve {
         margin: 40px;
@@ -1758,6 +1790,7 @@ textarea {
     .text p:nth-child(3) {
         padding: 20px 0 0 0;
     }
+
     /* gallery section  */
     .Gallerysection {
         background-position: center;
@@ -1896,9 +1929,59 @@ textarea {
 
     .bottom-footer .copyright {
         width: 100%;
+        padding: 0;
+        text-align: center;
     }
 
     .bottom-footer ul {
         padding: 10px 0 50px 10px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .story .col {
+        width: 100%;
+    }
+
+    .overview .col {
+        width: 100%;
+        margin: 0px;
+        padding: 20px 10px;
+    }
+
+    .glassimage img {
+        width: 100%;
+    }
+
+    .products, .Quality .col, .promotion .col, .bagerynews .col, .getintouch .col
+    {
+        width: 100%;
+    }
+    .passion button 
+    {
+        margin-left: 100px;
+    }
+
+    .contentcolumn1, .contentcolumn2
+    {
+        margin: 0;
+        padding: 10px 0 5px 10px;
+        box-shadow: none;
+    }
+
+    .roundicon {
+    width: 100px;
+    
+   }
+   .roundicon p {
+    font-size: 12px;
+    line-height: 40px;
+   };
+    .testimonials .col
+    {
+        padding: 20px 10px;
+        width: 100%;
+        margin: 0;
     }
 }
