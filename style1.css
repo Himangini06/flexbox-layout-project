@@ -1,3 +1,7 @@
+/* Add this to the top of your CSS to find the culprit */
+* {
+    outline: 2px solid red !important;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -88,7 +92,7 @@ a {
 }
 
 .megadropdown {
-    width: 100vw;
+    min-width: 100vw;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -973,7 +977,7 @@ footer .filter {
 }
 
 .contentcolumn1 {
-    width: 560px;
+    max-width: 560px;
     background: white;
     padding: 30px;
     margin-left: 20px;
@@ -981,7 +985,7 @@ footer .filter {
 }
 
 .contentcolumn2 {
-    width: 588px;
+    max-width: 588px;
     background: white;
     margin: 20px 0px 60px 145px;
     padding: 30px;
@@ -1831,13 +1835,13 @@ textarea {
     }
 
     .contentcolumn1 {
-        width: 100vw;
+        width: 100%;
         margin-right: 50px;
     }
 
     .contentcolumn2 {
         margin: 20px 20px;
-        width: 100vw;
+        width: 100%;
     }
 
     /* testimonial section */
