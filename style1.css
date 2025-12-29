@@ -1137,7 +1137,7 @@ footer .filter {
 
 .testimonials .text {
     width: 480px;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     margin-top: -270px;
 }
 
@@ -1978,10 +1978,17 @@ textarea {
     font-size: 12px;
     line-height: 40px;
    };
+
     .testimonials .col
     {
         padding: 20px 10px;
         width: 100%;
+
+    }
+    .testimonials .text
+    {
         margin: 0;
+        width: 100%;
+        padding: 20px;
     }
 }
